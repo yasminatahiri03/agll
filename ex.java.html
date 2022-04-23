@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>ex.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">ex (20 avr. 2022 20:56:08)</a> &gt; <a href="../../index.html" class="el_group">exam</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">exam</a> &gt; <span class="el_source">ex.java</span></div><h1>ex.java</h1><pre class="source lang-java linenums">package exam;
+
+		import java.util.Scanner;
+
+<span class="nc" id="L5">		public class ex {</span>
+		    //main method
+		    public static void main (String[] args) {
+		        //variable
+		        int choices;
+		        int song;
+		        int song2;
+		        int song3;
+		        int song4;
+		        int song5;
+
+		        //scanner for input options
+<span class="fc" id="L17">		        Scanner scan = new Scanner(System.in);</span>
+<span class="fc" id="L18">		        System.out.println(&quot;Qui chante cette chanson ma belle ':&quot;);</span>
+
+		        //choose singer from these 4 options
+<span class="fc" id="L21">		        System.out.println(&quot;Choisissez 1 pour R.lasquel moha . \\ Choisissez 2 pour City et Adam Levine. \\Choisissez 3 pour Selena Gomez. \\nChoisissez 4 pour Katy Perry.&quot;);</span>
+<span class="fc" id="L22">		        song = scan.nextInt();</span>
+
+
+<span class="pc bpc" id="L25" title="1 of 2 branches missed.">		        if (song != 1) {</span>
+		            //if select wrong options
+<span class="nc" id="L27">		            System.out.println(&quot;Votre réponse est incorrecte R. Moha est la bonne réponse .&quot;);</span>
+		        }
+
+		        {
+<span class="pc bfc" id="L31" title="All 2 branches covered.">		            while (song == 1) {</span>
+		                //selected right option
+<span class="fc" id="L33">		                System.out.println(&quot;Félicitation, votre réponse est correcte&quot;);</span>
+
+<span class="fc" id="L35">		                song++;</span>
+		            }
+<span class="fc" id="L37">		            System.out.println();</span>
+		        }
+
+
+<span class="fc" id="L41">		        System.out.println(&quot;Qui chante cette chanson 'La belle et la bête' :\&quot;);&quot;);</span>
+
+		        //choose singer from these 4 options
+<span class="fc" id="L44">		        System.out.println(&quot;Choisissez 1 pour R. City et Adam Levine. \\nChoisissez 2 pour Justin Bieber. \\nChoisissez 3 pour Selena Gomez. \\nChoisissez 4 pour Katy Perry.&quot;);</span>
+<span class="fc" id="L45">		        song2 = scan.nextInt();</span>
+
+
+<span class="pc bpc" id="L48" title="1 of 2 branches missed.">		        if (song2 != 2) {</span>
+<span class="nc" id="L49">		            System.out.println(&quot;Votre reponse est incorrecte Justin est la bonne reponse.&quot;);</span>
+		        }
+
+		        {
+<span class="pc bfc" id="L53" title="All 2 branches covered.">		            while (song2 == 2) {</span>
+<span class="fc" id="L54">		                System.out.println(&quot;Félicitation, votre réponse est correcte &quot;);</span>
+<span class="fc" id="L55">		                song2++;</span>
+		            }
+<span class="fc" id="L57">		            System.out.println();</span>
+		        }
+		        //name the singer of this song
+<span class="fc" id="L60">		        System.out.println(&quot;Qui chante cette chanson  'Heal the world':&quot;);</span>
+
+		        //choose singer from these 4 options
+<span class="fc" id="L63">		        System.out.println(&quot;Choisissez 1 pour R. City &amp; Adam Levine's. \nChoose 2 for Micheal Jackson.  \nChoose 3 for Selena Gomez. \nChoose 4 for Katy Perry.&quot;);</span>
+<span class="fc" id="L64">		        song4 = scan.nextInt();</span>
+
+
+<span class="pc bpc" id="L67" title="1 of 2 branches missed.">		        if (song4 != 2) {</span>
+<span class="fc" id="L68">		            System.out.println(&quot;Votre reponse est incorrecte Justin est la bonne reponse&quot;);</span>
+		        }
+
+		        {
+<span class="pc bpc" id="L72" title="1 of 2 branches missed.">		            while (song4 == 2) {</span>
+		                //display congrate message for right answer
+<span class="nc" id="L74">		                System.out.println(&quot;Félicitation, votre réponse est correcte&quot;);</span>
+<span class="nc" id="L75">		                song4++;</span>
+		            }
+<span class="fc" id="L77">		            System.out.println();</span>
+		        }
+
+		        //display Question
+<span class="fc" id="L81">		        System.out.println(&quot;Qui chante cette chanson 'Roar':&quot;);</span>
+
+		        //choose singer from these 4 options
+<span class="fc" id="L84">		        System.out.println(&quot;Choisissez 1 pour R. City &amp; Adam Levine's. \nChoose 2 for Justin Bieber.  \nChoose 3 for Selena Gomez. \nChoose 4 for Katy Perry.&quot;);</span>
+<span class="fc" id="L85">		        song3 = scan.nextInt();</span>
+
+
+<span class="pc bpc" id="L88" title="1 of 2 branches missed.">		        if (song3 != 4) {</span>
+		            //display congrate message for incorrect answer
+<span class="fc" id="L90">		            System.out.println(&quot;Votre reponse est incorrecte Justin est la bonne reponse.&quot;);</span>
+		        }
+
+		        {
+<span class="pc bpc" id="L94" title="1 of 2 branches missed.">		            while (song3 == 4) {</span>
+		                //display congrate message for right answer
+<span class="nc" id="L96">		                System.out.println(&quot;Félicitation, votre réponse est correcte&quot;);</span>
+<span class="nc" id="L97">		                song3++;</span>
+		            }
+<span class="fc" id="L99">		            System.out.println();</span>
+		        }
+		        //name of a singer
+<span class="fc" id="L102">		        System.out.println(&quot;Qui chante cette chanson 'The Heart Wants What It Wants ':&quot;);</span>
+
+		        //choose singer from these 4 options
+<span class="fc" id="L105">		        System.out.println(&quot;Choisissez 1 pour R. City &amp; Adam Levine's. \nChoose 2 for Justin Bieber.  \nChoose 3 for Selena Gomez. \nChoose 4 for Katy Perry.&quot;);</span>
+<span class="fc" id="L106">		        song5 = scan.nextInt();</span>
+<span class="pc bpc" id="L107" title="1 of 2 branches missed.">		        if (song5 != 3) {</span>
+<span class="nc" id="L108">		            System.out.println(&quot;Votre reponse est incorrecte Justin est la bonne reponse.&quot;);</span>
+		        }
+		        {
+		            //using while loop
+<span class="pc bfc" id="L112" title="All 2 branches covered.">		            while (song5 == 3) {</span>
+		                //display congrats message for right answer
+<span class="fc" id="L114">		                System.out.println(&quot;Félicitation, votre réponse est correcte&quot;);</span>
+		                //stop repeating
+<span class="fc" id="L116">		                song5++;</span>
+		            }  //stop repeating
+<span class="fc" id="L118">		            System.out.println();</span>
+		        }
+<span class="fc" id="L120">		    }</span>
+		
+	}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span>ex (20 avr. 2022 20:56:08)</div></body></html>
